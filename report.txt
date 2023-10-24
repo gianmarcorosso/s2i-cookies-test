@@ -1,0 +1,15 @@
+24 Oct 2023
+Code Implementations
+
+#Function getCookie:
+- Replaced the use of forEach with a traditional for loop to make the code more readable and compact.
+This change was motivated by the desire to find the desired cookie in a more direct and immediate manner.
+
+#Function setUtmCookie:
+- Added a referrer parameter, which captures the user's referring URL.
+  > This addition enhances the functionality by providing information about the source of the user.
+- Modified the structure of cValue to include referrer as part of the object.
+  > This ensures that the referring URL is included in the data being stored.
+- Changed how multiple cookies are handled.
+  > Now, if there is already information in the utm_parameters cookie, the new landing data is appended to the existing information instead of overwriting it.
+    This allows for the capture of additional information, such as the user's referrer.
